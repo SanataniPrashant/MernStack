@@ -1,0 +1,20 @@
+#homeDoctors{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    padding-left: 120px;
+}
+#footer{
+    background-color: rgb(193, 188, 180);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 35px;
+}
+#doclogin{
+    background-color: transparent;
+    margin: auto;
+    width: 500px;
+}
+
+
