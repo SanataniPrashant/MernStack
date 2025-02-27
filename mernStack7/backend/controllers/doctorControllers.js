@@ -38,12 +38,12 @@ const doctorLogin =async(req, res)=>{
      const Doctor = await DoctorModel.findOne({email:email});
      if (!Doctor)
      {
-       res.status(400).send({msg:"Invalid Email!"})
+       return res.status(400).send({msg:"Invalid Email!"})
      }
  
      if (Doctor.password!=password)
      {
-         res.status(400).send({msg:"Invalid Credentials!"});
+        return  res.status(400).send({msg:"Invalid Credentials!"});
      }
  
      res.status(200).send(Doctor);
@@ -61,9 +61,16 @@ const doctorLogin =async(req, res)=>{
    res.status(200).send(Doctor);
  }
 
+ 
+const patientlist=async(req, res)=>{
+    const {docid} = req.query;
+    const Pateint = await  PateintModel.find({doctorId:docid})
+     res.status(200).send(Pateint);
+}
 module.exports ={
     doctorRegistration,
     doctorHomeDisplay,
     doctorLogin,
-    doctorSearch
+    doctorSearch,
+    patientlist
 }

@@ -1,0 +1,27 @@
+#logo{
+    height: 80px;
+    width: 80px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+}
+
+.car{
+    margin-left: 10vh;
+    width: 90%;
+    height: 90vh;
+
+}
+.r{
+    margin-top: 20px;
+}
+.r h1{
+    text-align: center;
+}
+.row ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}

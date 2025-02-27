@@ -6,6 +6,8 @@ import Home from './Files/Home';
 import DoctorLogin from './Files/DoctorLogin';
 import SearchDoctor from './Files/SearchDoctor';
 import DoctorDashBoard from './DoctorDashboard';
+import PatientAppointment from './Files/PatientAppoinment';
+import MyPatient from './Files/MyPatient';
 
 function App() {
 
@@ -16,11 +18,12 @@ function App() {
         <Route index element={<Home/>} />
         <Route path='doctorlogin' element={<DoctorLogin/>} />
         <Route path='searchdoctor' element={<SearchDoctor/>} />
+        <Route path="patientapp/:id" element={<PatientAppointment/>} />
         </Route>
       </Routes>
       <Routes>
          <Route path="doctordashboard" element={<DoctorDashBoard/>}>
-         
+         <Route path="mypatient" element={<MyPatient/>}/>
          </Route>
       </Routes>
     </>

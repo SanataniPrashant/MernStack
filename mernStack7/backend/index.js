@@ -4,6 +4,7 @@ const cors= require("cors");
 const bodyParser = require('body-parser');
 const mongoose= require("mongoose");
 const doctorRoute = require("./routes/doctorRoute")
+const patientRoute= require("./routes/patientRoute");
 require("dotenv").config();
 
 app.use(cors());
@@ -22,7 +23,7 @@ mongoose.connect(process.env.DBCONN).then(()=>{
 
 app.use("/doctor",doctorRoute);
 
-
+app.use("/patient", patientRoute);
 
 
 const Port=process.env.PORT || 8080;
