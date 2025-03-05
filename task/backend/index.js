@@ -13,12 +13,14 @@ mongoose.connect(process.env.DB).then(()=>{
     console.log(error);
 })
 const adminRoute = require("./routes/adminRoute")
+const vehicleRoute = require("./routes/vehicleRoute")
 app.use(cors());
 // Parse incoming requests with JSON payloads
 app.use(bodyParser.json());
 // Parse incoming requests with urlencoded payloads
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/admin", adminRoute);
+app.use("/vehicle",vehicleRoute);
 
 
 const Port=process.env.PORT || 8000;

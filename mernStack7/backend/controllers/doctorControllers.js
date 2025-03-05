@@ -1,5 +1,5 @@
 const DoctorModel= require("../models/doctorModel");
-
+const PatientModel= require("../models/patientModel");
 
 const doctorRegistration=async(req, res)=>{
     const {name,address, city, mobile,speciality,email, password} = req.body; 

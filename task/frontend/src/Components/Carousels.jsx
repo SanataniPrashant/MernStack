@@ -12,7 +12,7 @@ const Carousels = ()=>{
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className='car' src="https://images.pexels.com/photos/14055741/pexels-photo-14055741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
+        <img className='car' src="https://wallup.net/wp-content/uploads/2017/03/28/71822-vehicle.jpg" alt="" />
         <Carousel.Caption>
           <h3>Black Mercedes Benz Car Parked on Road Side</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

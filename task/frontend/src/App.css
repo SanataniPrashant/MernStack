@@ -25,3 +25,71 @@
     align-items: center;
     gap: 50px;
 }
+
+#dropdown-basic-1{
+background-color: lightskyblue;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+height: 80px;
+}
+
+.logout-button {
+    /* Font styles */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  
+    /* Background color and hover effect */
+    background-color: #4CAF50; /* Green background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  
+    /* Hover effect */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .logout-button:hover {
+    background-color: #3e8e41; /* Darker green background color on hover */
+  }
+
+
+  .admin-profile {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-information-section {
+    margin-bottom: 20px;
+  }
+  
+  .action-buttons-section {
+    margin-bottom: 20px;
+  }
+  
+  .additional-features-section {
+    margin-bottom: 20px;
+  }

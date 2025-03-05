@@ -6,5 +6,9 @@ const adminSchema = new mongoose.Schema({
     brand:String,
     email:String,
     password:String,
+    vehicleid: {
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"vehicles"
+    }
 })
 module.exports = mongoose.model("admin",adminSchema);

@@ -20,13 +20,10 @@ const TopNav = ()=>{
             <NavDropdown title="Dropdown" id="collapsible-nav-dropdown">
               <NavDropdown.Item as={Link} to="/searchvehicle">Search vehicles</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/addvehicle">
-                Add vehicles
+                Vehicles List
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3"></NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
           <Nav>
